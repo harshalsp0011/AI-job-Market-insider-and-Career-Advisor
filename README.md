@@ -22,7 +22,7 @@ The system mimics a real-world analytics firm with the following workflow:
 3.  **Remote Consultation:** The Analyst queries a separate Trend Analyzer microservice via A2A.
 4.  **Advisory:** A Coach agent synthesizes the findings into a career roadmap.
 
-![Architecture Diagram](workflow agenet ai.png)
+![Architecture Diagram](main/workflow agenet ai.png)
 
 
 ---
