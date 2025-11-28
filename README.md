@@ -23,7 +23,7 @@ The system mimics a real-world analytics firm with the following workflow:
 4.  **Advisory:** A Coach agent synthesizes the findings into a career roadmap.
 
 ![Architecture Diagram](workflow agenet ai.png)
-*(Note: Upload your architecture image to the repo and ensure the filename matches)*
+
 
 ---
 
