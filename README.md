@@ -1,5 +1,5 @@
 
-# AI Job Market Insider and Career Advisor🕵️‍♂️🤖📊
+# AI Job Market Insider and Career Advisor
 
 **A Multi-Agent System (MAS) built with the Google Agent Development Kit (ADK) that automates job market research using parallel execution and remote microservices.**
 
@@ -7,13 +7,13 @@
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Finding the "hot" skills in the AI job market usually involves hours of reading conflicting articles and messy job descriptions. **AI Job Market Insider** solves this by deploying a team of specialized AI agents to scour the web, clean the data, analyze trends, and provide actionable career advice—all in seconds.
 
 Unlike a standard script, this project utilizes **Distributed Agent Architecture**. It treats agents like specialized employees, some working locally in parallel and others working as remote consultants via network protocols.
 
-## 🏗️ Architecture
+## Architecture
 
 The system mimics a real-world analytics firm with the following workflow:
 
@@ -27,28 +27,28 @@ The system mimics a real-world analytics firm with the following workflow:
 
 ---
 
-## 🤖 The Agent Team
+## The Agent Team
 
 We modeled this system after a human research team using the **Google Gen AI SDK**:
 
-### 1. The Scouts (Parallel Team) 🕵️
+### 1. The Scouts (Parallel Team)
 * **Agents:** `AI_Job_Searcher` & `Data_Job_Searcher`
 * **Role:** These agents utilize the **Google Search Tool** to find live job descriptions.
 * **Engineering Highlight:** These run in **Parallel**. Instead of blocking execution, both agents fire simultaneously, reducing data gathering time by ~50%.
 
-### 2. The Analyst (Skill Extractor) 🧹
+### 2. The Analyst (Skill Extractor)
 * **Role:** Receives raw, unstructured text from the Scouts. It performs **Data Cleaning** and **Entity Extraction** to create a structured list of skills (e.g., removing duplicates like "PyTorch" vs "Pytorch").
 
-### 3. The External Specialist (Trend Analyzer) 📡
+### 3. The External Specialist (Trend Analyzer)
 * **Role:** Classifies skills into "Rising" vs. "Foundational."
 * **Engineering Highlight (Microservice):** This agent does **not** live in the main application. It runs as a standalone service. The main app connects to it using the **Agent2Agent (A2A) Protocol**. This demonstrates secure, cross-service communication between AI systems.
 
-### 4. The Coach (Career Advisor) 🎓
+### 4. The Coach (Career Advisor)
 * **Role:** Takes the structured trend report and generates a specific project idea (e.g., "Build a RAG Chatbot") to help the user demonstrate the required skills.
 
 ---
 
-## 🛠️ Key Technical Concepts
+## Key Technical Concepts
 
 This project demonstrates advanced utilization of the Google ADK:
 
@@ -59,7 +59,7 @@ This project demonstrates advanced utilization of the Google ADK:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 * Python 3.10+
@@ -103,7 +103,7 @@ This project demonstrates advanced utilization of the Google ADK:
 
 ---
 
-## 📊 Example Output
+## Example Output
 
 ```text
 [System] Starting Parallel Scouts...
